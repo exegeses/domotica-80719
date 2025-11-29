@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    margin: auto; /* centrar contenedor en horizontal */
+    background-color: hsl(240, 17%, 5%);
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+/* header */
+header{
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    header nav a{
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    header nav a:hover{
+        color: hsl(196, 80%, 66%);
+    }
+
+
+/* main */
+main{
+    min-height: 800px;
+}
+/* hero section */
+#hero{
+    margin-top: 40px;
+    height: 640px;
+    background-image: url(../imgs/glasses-hero.jpg);
+}
+    #hero h1{
+        margin-left: 80px;
+        padding-top: 271px;
+        font-weight: 300;
+        text-shadow: 0px 0px 16px hsl(196, 80%, 66%);
+    }
+        #hero h1 span{
+            color: hsl(196, 80%, 66%);
+        }
+
+    #hero p{
+        width: 544px;
+        margin-top: 16px;
+        margin-left: 80px;
+        text-shadow: 0px 0px 16px hsl(196, 80%, 66%);
+    }
+
+/* sección productos */
+#productos{
+    height: 586px;
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: space-between;
+}
+    #productos article{
+        width: 373px;
+        height: 586px;
+        border: 1px solid #333333;
+        border-radius: 12px;
+    }
+    #productos article:hover{
+        box-shadow: 0px 0px 12px #666;
+    }
+
+        #productos article h2{
+            font-weight: 400;
+            color: #62C9EE;
+            margin-top: 21px;
+            margin-left: 32px;
+        }
+        #productos article p{
+            margin-top: 12px;
+            margin-left: 32px;
+            margin-bottom: 24px;
+        }
+        #productos article a{
+            width: 309px;
+            height: 40px;
+            background-color: hsl(196, 80%, 60%);
+            margin: auto;
+            padding: 10px;
+            border-radius: 8px;
+            display: block;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+        }
+        #productos article a:hover{
+            background-color: hsl(196, 80%, 70%);
+            box-shadow: 0px 0px 12px hsl(196, 80%, 66%);
+        }
+
+
+
+/* footer */
+footer{
+    height: 216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    footer div a img{
+        width: 32px;
+        margin: 8px;
+    }
